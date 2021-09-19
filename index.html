@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de Afazeres</title>
+</head>
+<body>
+    
+<!--Cabeçalho-->
+    <div class="todo">
+        <div class="todo__title">
+            Lista de Afazeres
+        </div>
+        <div class="row">
+            <div class="helpText col-12">
+                <p id="first">1. Insira texto no campo de entrada para adicionar itens à sua lista.</p>
+                <p id="second">2. Clique no item para marcá-lo como atividade concluída.</p>
+                <p id="third">3. Clique no "X" para remover o item da sua lista.</p>
+            </div>
+        </div>
+<!--Campo de entrada de dados-->   
+        <div class="todo__new-item" id="newItem">
+            <div></div>
+            <input type="text" id="text" placeholder="Digite, pressione enter ou clique no botão para adicionar a tarefa" minlength="2">
+            <button id="click" type="button" value="" onclick="inserirItem()"><img src="pencil.png"></button>
+            <div></div>
+<!--Lista-->
+        </div>
+            <div class="todo__list" id='todoList'>
+        </div>
+    </div>
+<!--Rodapé--> 
+    <footer class="footer">
+        <p>Desenvolvido por Kalyana Greim - 19.09.2021 - &copy;DEVinHouse/SENAI</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
