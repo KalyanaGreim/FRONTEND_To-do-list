@@ -31,8 +31,7 @@ const inserirItem = (evento) => {
     const tecla = evento.key;
     const texto = evento.target.value;
     const btn = document.querySelector('#text').value;
-    if (btn.length == 0) {
-        (confirm('Sua caixa de texto está vazia! Digite algo.'))}
+    
     if (tecla === 'Enter' || btn == onclick) {
         const banco = getBanco();
         banco.push ({'tarefa': texto, 'status': ''});
